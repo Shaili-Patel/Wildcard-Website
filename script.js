@@ -1,9 +1,9 @@
 let userName = prompt('What is your name?')
 
-let myStory = `
-  <h1> Hello Detective ${userName},</h1>`;
+let detectiveName = `
+  <h1 class="fade-in-text"> Hello Detective ${userName},</h1>`;
 // Entire Story End
 
-console.log(myStory);
+console.log(detectiveName);
 
-document.getElementById('story').innerHTML = myStory;
+document.getElementById('detective').innerHTML = detectiveName;
