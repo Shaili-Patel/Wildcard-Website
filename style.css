@@ -1,6 +1,8 @@
 body {
-  background-color: black;
-  padding-top: 30px;
+  /* background-color: black; */
+  background-image: url(imgs/fingerprint.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fade-in-text {
@@ -9,8 +11,9 @@ body {
   font-family: "pf-fuel-decay";
   font-weight: 400;
   font-style: normal;
-  color: red;
+  color: white;
   animation: fadeIn 6s;
+  padding-top: 80px;
 }
 
 @keyframes fadeIn {
@@ -28,9 +31,10 @@ body {
   font-family: "pf-fuel-decay";
   font-weight: 400;
   font-style: normal;
-  color: red;
+  color: white;
   animation: fadeIn 6s;
   margin-top: 70px;
+  padding-bottom: 50px;
 }
 
 @keyframes fadeIn {
@@ -45,6 +49,23 @@ body {
 .start {
   align-self: center;
   background-color: red;
+  padding: 10px 20px;
+  display: block;
+  margin: auto;
+}
+
+.start {
+  align-self: center;
+  background-color: red;
+  padding: 10px 20px;
+  display: block;
+  margin: auto;
+}
+
+.start:hover {
+  align-self: center;
+  background-color: black;
+  color: white;
   padding: 10px 20px;
   display: block;
   margin: auto;
