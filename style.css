@@ -1,8 +1,35 @@
-body {
-  /* background-color: black; */
+body.index {
   background-image: url(imgs/fingerprint.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body.game {
+  background-color: black;
+}
+
+body.evelyn {
+  background-color: black;
+}
+
+body.daniel {
+  background-color: black;
+}
+
+body.claire {
+  background-color: black;
+}
+
+body.carlos {
+  background-color: black;
+}
+
+body.ava {
+  background-color: black;
+}
+
+body.thomas {
+  background-color: black;
 }
 
 .fade-in-text {
@@ -23,6 +50,16 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 90px;
+}
+
+h3 {
+  color: white;
 }
 
 .fade-in-text-larger {
@@ -69,4 +106,45 @@ body {
   padding: 10px 20px;
   display: block;
   margin: auto;
+}
+
+/* character buttons */
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+.character-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.character-button:hover .button-image {
+  transform: scale(1.1);
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
