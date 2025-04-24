@@ -1,35 +1,64 @@
 body.index {
-  background-image: url(imgs/fingerprint.jpg);
+  background-image: url(imgs/mansion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 body.game {
-  background-color: black;
+  background-image: url(imgs/suspects-bg.avif);
+  padding-top: 55px;
 }
 
 body.evelyn {
   background-color: black;
+  padding-top: 95px;
 }
 
 body.daniel {
   background-color: black;
+  padding-top: 95px;
 }
 
 body.claire {
   background-color: black;
+  padding-top: 95px;
 }
 
 body.carlos {
   background-color: black;
+  padding-top: 95px;
 }
 
 body.ava {
   background-color: black;
+  padding-top: 95px;
 }
 
 body.thomas {
   background-color: black;
+  padding-top: 95px;
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 150px;
+  animation: fadeIn 5s;
+}
+
+.cement {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fade-in-text {
@@ -55,7 +84,10 @@ body.thomas {
 h2 {
   color: white;
   text-align: center;
-  font-size: 90px;
+  font-size: 120px;
+  font-family: "fleur";
+  font-weight: 700;
+  font-style: normal;
 }
 
 h3 {
