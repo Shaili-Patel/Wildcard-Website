@@ -38,7 +38,7 @@ body.thomas {
 }
 
 body.guess {
-  background-image: url(imgs/suspects-bg.avif);
+  background-color: black;
   padding-top: 95px;
 }
 
@@ -84,33 +84,53 @@ body.guess {
   }
 }
 
-h2 {
+h1 {
   color: white;
   text-align: center;
-  font-size: 220px;
+  font-size: 120px;
   font-family: "fleur";
   font-weight: 700;
   font-style: normal;
 }
 
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 300px;
+  font-family: "fleur";
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 6%;
+}
+
 h3 {
   color: white;
+  padding-top: 20%;
 }
 
 .fade-in-text-larger {
-  font-size: 200px;
+  font-size: 300px;
   text-align: center;
   font-family: "fleur";
   font-weight: 400;
   font-style: normal;
   color: white;
   animation: fadeIn 6s;
-  margin-top: 70px;
+  margin-top: 30px;
   padding-bottom: 50px;
 }
 
+h6 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: "fleur";
+  font-weight: 700;
+  font-style: normal;
+}
+
 h4 {
-  color: black;
+  color: white;
   text-align: center;
   font-size: 20px;
 }
@@ -124,51 +144,22 @@ h4 {
   }
 }
 
-.start {
-  align-self: center;
-  background-color: red;
-  padding: 10px 20px;
-  display: block;
-  margin: auto;
-}
-
-.start {
-  align-self: center;
-  background-color: red;
-  padding: 10px 20px;
-  display: block;
-  margin: auto;
-}
-
-.start:hover {
-  align-self: center;
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  display: block;
-  margin: auto;
-}
-
-/* character buttons */
+/* Character Buttons */
 
 .button-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px;
+  padding: 20px 0;
 }
 
 .character-button {
+  width: 100%;
+  padding: 0;
   background: none;
   border: none;
   cursor: pointer;
 }
 
 .button-image {
-  width: 180px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -178,14 +169,133 @@ h4 {
   transform: scale(1.1);
 }
 
-.column {
-  float: left;
-  width: 16.66%;
-  padding: 5px;
+/* Character Buttons End*/
+
+/* Button Styling */
+
+.holographic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.row::after {
+.holographic-card {
+  width: 150px;
+  height: 60px;
+  background: rgb(92, 28, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card button {
+  font-size: 15px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "the-seasons";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.holographic-card::before {
   content: "";
-  clear: both;
-  display: table;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(181, 76, 207, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 1;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(181, 76, 207, 0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+/* Button Styling Ends*/
+
+/* Button Styling Part 2 Starts*/
+
+.holographic-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7%;
+}
+
+.holographic-card2 {
+  width: 300px;
+  height: 60px;
+  background: rgb(92, 28, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card2 button {
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "the-seasons";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.holographic-card2::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(181, 76, 207, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 1;
+}
+
+.holographic-card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(181, 76, 207, 0.5);
+}
+
+.holographic-card2:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
 }
