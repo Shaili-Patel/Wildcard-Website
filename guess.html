@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container text-center my-5">
+        <h1>Who do you think the murderer is?</h1>
+
+        <form id="guessForm">
+            <div>
+                <label><input type="radio" name="suspect" value="Ava" required> Ava</label>
+            </div>
+            <div>
+                <label><input type="radio" name="suspect" value="Carlos"> Carlos</label>
+            </div>
+            <div>
+                <label><input type="radio" name="suspect" value="Claire"> Claire</label>
+            </div>
+            <div>
+                <label><input type="radio" name="suspect" value="Daniel"> Daniel</label>
+            </div>
+            <div>
+                <label><input type="radio" name="suspect" value="Evelyn"> Evelyn</label>
+            </div>
+            <div>
+                <label><input type="radio" name="suspect" value="Thomas"> Thomas</label>
+            </div>
+
+
+            <button type="submit" class="mt-3">Guess</button>
+        </form>
+
+        <!-- Area to show result -->
+        <div id="result" class="mt-3"></div>
+    </div>
+
+    <section class="back-button text-center my-4">
+        <button onclick="window.location.href='index.html'">Restart Game</button>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const guessForm = document.getElementById('guessForm');
+            const resultDiv = document.getElementById('result');
+
+            guessForm.addEventListener('submit', function (e) {
+                e.preventDefault();  // Prevent page reload
+
+                // Get the selected suspect
+                const selectedSuspect = document.querySelector('input[name="suspect"]:checked').value;
+
+                // Check if the guess is correct
+                if (selectedSuspect === "Claire") {
+                    resultDiv.innerHTML = "<h4>Correct! Claire is the murderer! Claire is likely the murderer due to inconsistencies in her story and suspicious behavior. She claimed to be playing piano all night, but no one heard the music, and the sheet music was untouched. A smear of mud led from her door to the garden, suggesting she left her room. When asked about the music, Claire hesitated, revealing a slip in her alibi. Her nervous demeanor further indicates she’s hiding something, making her involvement in the crime highly suspect. </h4>";
+                    resultDiv.style.color = "green";
+                } else {
+                    resultDiv.innerHTML = `<h4>Sorry, that's not the murderer. Try again!</h4>`;
+                    resultDiv.style.color = "red";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

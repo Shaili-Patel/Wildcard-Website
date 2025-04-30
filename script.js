@@ -1,7 +1,7 @@
 let userName = prompt('What is your name?')
 
 let detectiveName = `
-  <h1 class="fade-in-text"> Hello Detective ${userName},</h1>`;
+  <h2 class="fade-in-text"> Hello Detective ${userName},</h2>`;
 // Entire Story End
 
 console.log(detectiveName);
