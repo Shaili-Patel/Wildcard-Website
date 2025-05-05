@@ -1,4 +1,11 @@
-let userName = prompt('What is your name?')
+let userName;
+window.onload = function name() {
+  let url = window.location.href.split("/");
+  url = url[url.length - 1]
+  if (url == "index.html") {
+    userName = prompt('What is your name?')
+  }
+}
 
 let detectiveName = `
   <h2 class="fade-in-text"> Hello Detective ${userName},</h2>`;
@@ -22,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     gameScreen.classList.remove('d-none');  // show game screen
   });
 });
-
 
 function openCharacterPage(character) {
   // Open a new page based on the character clicked

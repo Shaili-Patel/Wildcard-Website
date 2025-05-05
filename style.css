@@ -5,6 +5,7 @@ body.index {
 body.game {
   background-image: url(imgs/suspects-bg.avif);
   padding-top: 55px;
+  padding-bottom: 95px;
 }
 
 body.evelyn {
@@ -14,7 +15,7 @@ body.evelyn {
 
 body.emily {
   background-color: black;
-  padding-top: 95px;
+  padding-top: 60px;
 }
 
 body.claire {
@@ -39,7 +40,7 @@ body.thomas {
 
 body.guess {
   background-image: url(imgs/suspects-bg.avif);
-  padding-top: 95px;
+  padding-top: 45px;
 }
 
 #guessForm {
@@ -110,7 +111,7 @@ h2 {
   font-family: "fleur";
   font-weight: 700;
   font-style: normal;
-  padding-bottom: 6%;
+  padding-bottom: 3%;
 }
 
 h3 {
@@ -137,6 +138,7 @@ h6 {
   font-family: "fleur";
   font-weight: 700;
   font-style: normal;
+  padding-bottom: 45px;
 }
 
 h4 {
@@ -184,6 +186,16 @@ h4 {
 }
 
 /* Character Buttons End*/
+
+.character-text {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "griffon";
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 20px;
+}
 
 /* Button Styling */
 
