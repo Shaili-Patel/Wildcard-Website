@@ -8,7 +8,7 @@ window.onload = function name() {
 }
 
 let detectiveName = `
-  <h2 class="fade-in-text"> Hello Detective,</h2>`;
+  <h2 class="fade-in-text">Hello Detective,</h2>`;
 // Entire Story End
 
 console.log(detectiveName);
